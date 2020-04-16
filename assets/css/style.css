@@ -133,7 +133,7 @@ p {
   border: 0;
   overflow: hidden;
   background-position: center;
-  background: -webkit-linear-gradient(left, #d1651a 0%, #c1282a 50%, #d1651a 100%);
+  background: #f7941e;
   background-position-x: 0%;
   background-position-y: 0%;
   background-size: auto;
@@ -938,8 +938,7 @@ p {
     top: 0;
     height: 100%;
     width: 100%;
-    background: -webkit-linear-gradient(left, #d1651a 0%, #c1282a 50%, #d1651a 100%)
-  
+    background: linear-gradient(90deg, rgba(41,57,128,1) 0%, rgba(28,117,188,1) 100%);  
   }
   .banner-area .banner-content {
     overflow: hidden; }
@@ -1332,7 +1331,7 @@ padding-top: 100px;}
       display: inline-block; }
       .why-choose-area .why-choose-content ul li:last-child a {
         margin-left: 35px;
-        color: #094074;
+        color: #fff;
         font-family: 'Roboto', sans-serif;
         font-weight: 600;
         text-transform: uppercase; }
@@ -2189,9 +2188,8 @@ padding-top: 100px;}
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: -webkit-linear-gradient(bottom, rgba(209, 101, 26, 0.9) 0%, rgba(193, 40, 42, 0.9) 100%);
-    background-image: -o-linear-gradient(bottom, rgba(209, 101, 26, 0.9) 0%, rgba(193, 40, 42, 0.9) 100%);
-    background-image: linear-gradient(to top, rgba(209, 101, 26, 0.9) 0%, rgba(193, 40, 42, 0.9) 100%); }
+    background: linear-gradient(90deg, rgba(41,57,128, 0.9) 0%, rgba(28,117,188, 0.9) 100%);
+  }
 
 .testimonials-slider {
   position: relative;
@@ -2979,9 +2977,9 @@ padding-top: 100px;}
 .subscribe-area {
   margin-bottom: -115px; }
   .subscribe-area .subscribe-box {
-    background-image: -moz-linear-gradient(0deg, #d1651a 0%, #c1282a 100%);
-    background-image: -webkit-linear-gradient(0deg, #d1651a 0%, #c1282a 100%);
-    background-image: -ms-linear-gradient(0deg, #d1651a 0%, #c1282a 100%);
+
+    background: linear-gradient(90deg, rgba(41,57,128,1) 0%, rgba(28,117,188,1) 100%);
+
     padding: 40px 0; }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
       .subscribe-area .subscribe-box .subscribe-info {
@@ -3019,13 +3017,13 @@ padding-top: 100px;}
       .subscribe-area .subscribe-box .subscribe-info .input-box input {
         width: 100%;
         border: 0;
-        background: #b23521;
+        background: #eee;
         line-height: 60px;
         padding-left: 22px;
-        color: #fff; }
+        color: #1c75bc; }
         .subscribe-area .subscribe-box .subscribe-info .input-box input::placeholder {
           opacity: .5;
-          color: #fff; }
+          color: #1c75bc; }
       .subscribe-area .subscribe-box .subscribe-info .input-box button {
         position: absolute;
         right: 0;
@@ -4008,9 +4006,8 @@ padding-top: 100px;}
       width: 100%;
       height: 100%;
       z-index: -1;
-      background-image: -moz-linear-gradient(0deg, #d1651a 0%, #c1282a 100%);
-      background-image: -webkit-linear-gradient(0deg, #d1651a 0%, #c1282a 100%);
-      background-image: -ms-linear-gradient(0deg, #d1651a 0%, #c1282a 100%);
+      background: linear-gradient(90deg, rgba(41,57,128,1) 0%, rgba(28,117,188,1) 100%);
+
       opacity: 0;
       visibility: hidden;
       -webkit-transition: all 0.5s ease-out 0s;
@@ -4070,9 +4067,8 @@ padding-top: 100px;}
     color: #fff;
     top: 3px;
     z-index: 1;
-    background-image: -moz-linear-gradient(0deg, #d1651a 0%, #c1282a 100%);
-    background-image: -webkit-linear-gradient(0deg, #d1651a 0%, #c1282a 100%);
-    background-image: -ms-linear-gradient(0deg, #d1651a 0%, #c1282a 100%); }
+    background: linear-gradient(90deg, rgba(41,57,128,1) 0%, rgba(28,117,188,1) 100%);
+  }
     .go-top-wrap .go-top-btn i {
       font-size: 20px;
       font-weight: 700;
@@ -4091,9 +4087,8 @@ padding-top: 100px;}
       -o-animation: ripple 1.6s ease-out infinite;
       animation: ripple 1.6s ease-out infinite;
       opacity: 0;
-      background-image: -moz-linear-gradient(0deg, #d1651a 0%, #c1282a 100%);
-      background-image: -webkit-linear-gradient(0deg, #d1651a 0%, #c1282a 100%);
-      background-image: -ms-linear-gradient(0deg, #d1651a 0%, #c1282a 100%);
+      background: linear-gradient(90deg, rgba(41,57,128,1) 0%, rgba(28,117,188,1) 100%);
+
       border-radius: 10px; }
     .go-top-wrap .go-top-btn:hover {
       background-color: #222;
@@ -4814,5 +4809,11 @@ padding-top: 100px;}
     padding: 0 15px;
     font-size: 13px;
     margin-top: 20px;
+}
+.navbar-brand img{
+  max-width: 200px;
+}
+.footer-area .footer-content img {
+  max-width: 200px;
 }
 /*# sourceMappingURL=style.css.map */
