@@ -1,4 +1,14 @@
 $(function() {
+        /** Make Device name in product slider just 20 char **/
+        var community_post_p = $(".team-area .team-item .team-content p");
+    
+        var community_post_p_st;
+         for (var i = 0; i < community_post_p.length; i++) {
+            community_post_p_st = $(community_post_p[i]).text();
+            if(community_post_p_st.length >= 20){
+                    $(community_post_p[i]).text( community_post_p_st.slice( 0, 250) + "...");
+              }
+        }
     
     "use strict";
     

@@ -16,6 +16,8 @@
     <!-- Calendar CSS -->
     <link href="node_modules/calendar/dist/fullcalendar.css" rel="stylesheet" />
     <!-- Custom CSS -->
+    <link href="node_modules/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" type="text/css" />
+
     <link href="dist/css/style.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -61,9 +63,9 @@
                         <!-- Logo text -->
                         <span>
                             <!-- dark Logo text -->
-                            <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                            
                             <!-- Light Logo text -->
-                            <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                            
                         </span>
                     </a>
                 </div>
@@ -196,7 +198,7 @@
                                             <!-- Message -->
                                             <a href="javascript:void(0)">
                                                 <div class="user-img">
-                                                    <img src="../assets/images/users/1.jpg" alt="user" class="img-circle">
+                                                    <img src="images/users/2.jpg" alt="user" class="img-circle">
                                                     <span class="profile-status online pull-right"></span>
                                                 </div>
                                                 <div class="mail-contnet">
@@ -208,7 +210,7 @@
                                             <!-- Message -->
                                             <a href="javascript:void(0)">
                                                 <div class="user-img">
-                                                    <img src="../assets/images/users/2.jpg" alt="user" class="img-circle">
+                                                    <img src="images/users/2.jpg" alt="user" class="img-circle">
                                                     <span class="profile-status busy pull-right"></span>
                                                 </div>
                                                 <div class="mail-contnet">
@@ -415,7 +417,7 @@
                 <div class="user-profile">
                     <div class="user-pro-body">
                         <div>
-                            <img src="../assets/images/users/2.jpg" alt="user-img" class="img-circle">
+                            <img src="images/users/2.jpg" alt="user-img" class="img-circle">
                         </div>
                     
                     </div>
@@ -584,20 +586,29 @@
                             <div class="modal-body">
                                 <form role="form">
                                     <div class="row">
+                                        <div class="col-md-12">
+                                                <label class="control-label">Title</label>
+                                                <input class="form-control form-white" placeholder="Enter name" type="text" name="category-name" />
+                                        </div>
                                         <div class="col-md-6">
-                                            <label class="control-label">Category Name</label>
+                                            <label class="m-t-20">Start </label>
+                                            <input type="text" class="form-control" placeholder="2017-06-04" id="mdate">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="m-t-20">End </label>
+                                            <input type="text" class="form-control" placeholder="2017-06-04" id="smdate">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="control-label m-t-20">Zoom link</label>
                                             <input class="form-control form-white" placeholder="Enter name" type="text" name="category-name" />
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="control-label">Choose Category Color</label>
-                                            <select class="form-control form-white" data-placeholder="Choose a color..." name="category-color">
-                                                <option value="success">Success</option>
-                                                <option value="danger">Danger</option>
-                                                <option value="info">Info</option>
-                                                <option value="primary">Primary</option>
-                                                <option value="warning">Warning</option>
-                                                <option value="inverse">Inverse</option>
-                                            </select>
+                                            <label class="m-t-20">send link  </label>
+
+                                            <div class="custom-control custom-checkbox mr-sm-2 pt-3">
+                                                <input type="checkbox" class="custom-control-input" id="checkbox0" value="check">
+                                                <label class="custom-control-label" for="checkbox0">Send link</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </form>
@@ -617,130 +628,7 @@
                 <!-- Right sidebar -->
                 <!-- ============================================================== -->
                 <!-- .right-sidebar -->
-                <div class="right-sidebar">
-                    <div class="slimscrollright">
-                        <div class="rpanel-title"> Service Panel
-                            <span>
-                                <i class="ti-close right-side-toggle"></i>
-                            </span>
-                        </div>
-                        <div class="r-panel-body">
-                            <ul id="themecolors" class="m-t-20">
-                                <li>
-                                    <b>With Light sidebar</b>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-skin="skin-default" class="default-theme working">1</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-skin="skin-green" class="green-theme">2</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-skin="skin-red" class="red-theme">3</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-skin="skin-blue" class="blue-theme">4</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-skin="skin-purple" class="purple-theme">5</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-skin="skin-megna" class="megna-theme">6</a>
-                                </li>
-                                <li class="d-block m-t-30">
-                                    <b>With Dark sidebar</b>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-skin="skin-default-dark" class="default-dark-theme ">7</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-skin="skin-green-dark" class="green-dark-theme">8</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-skin="skin-red-dark" class="red-dark-theme">9</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-skin="skin-blue-dark" class="blue-dark-theme">10</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-skin="skin-purple-dark" class="purple-dark-theme">11</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" data-skin="skin-megna-dark" class="megna-dark-theme ">12</a>
-                                </li>
-                            </ul>
-                            <ul class="m-t-20 chatonline">
-                                <li>
-                                    <b>Chat option</b>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <img src="../assets/images/users/1.jpg" alt="user-img" class="img-circle">
-                                        <span>Varun Dhavan
-                                            <small class="text-success">online</small>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <img src="../assets/images/users/2.jpg" alt="user-img" class="img-circle">
-                                        <span>Genelia Deshmukh
-                                            <small class="text-warning">Away</small>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <img src="../assets/images/users/3.jpg" alt="user-img" class="img-circle">
-                                        <span>Ritesh Deshmukh
-                                            <small class="text-danger">Busy</small>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <img src="../assets/images/users/4.jpg" alt="user-img" class="img-circle">
-                                        <span>Arijit Sinh
-                                            <small class="text-muted">Offline</small>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <img src="../assets/images/users/5.jpg" alt="user-img" class="img-circle">
-                                        <span>Govinda Star
-                                            <small class="text-success">online</small>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <img src="../assets/images/users/6.jpg" alt="user-img" class="img-circle">
-                                        <span>John Abraham
-                                            <small class="text-success">online</small>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <img src="../assets/images/users/7.jpg" alt="user-img" class="img-circle">
-                                        <span>Hritik Roshan
-                                            <small class="text-success">online</small>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <img src="../assets/images/users/8.jpg" alt="user-img" class="img-circle">
-                                        <span>Pwandeep rajan
-                                            <small class="text-success">online</small>
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+          
                 <!-- ============================================================== -->
                 <!-- End Right sidebar -->
                 <!-- ============================================================== -->
@@ -788,6 +676,17 @@
     <script src="node_modules/moment/moment.js"></script>
     <script src='node_modules/calendar/dist/fullcalendar.min.js'></script>
     <script src="node_modules/calendar/dist/cal-init.js"></script>
+    <script src="node_modules/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+    <script>
+        if(window.location.hash == '#calender-open'){
+            $('#add-new-event').modal('show')
+
+        }
+        $('#mdate').bootstrapMaterialDatePicker({ weekStart: 0, time: true });
+        $('#smdate').bootstrapMaterialDatePicker({ weekStart: 0, time: true });
+
+    </script>
 </body>
 
 
