@@ -193,11 +193,11 @@ p {
   .section-title.section-title-2 span {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background: linear-gradient(90deg, rgba(41,57,128,1) 0%, rgba(28,117,188,1) 100%); }
+    background-image: linear-gradient(90deg, rgba(41,57,128,1) 0%, rgba(28,117,188,1) 100%); }
     .section-title.section-title-2 span::before {
-      background: linear-gradient(90deg, rgba(41,57,128,1) 0%, rgba(28,117,188,1) 100%); }
+      background-image: linear-gradient(90deg, rgba(41,57,128,1) 0%, rgba(28,117,188,1) 100%); }
     .section-title.section-title-2 span::after {
-      background: linear-gradient(90deg, rgba(41,57,128,1) 0%, rgba(28,117,188,1) 100%); }
+      background-image: linear-gradient(90deg, rgba(41,57,128,1) 0%, rgba(28,117,188,1) 100%); }
   .section-title.section-title-2 .title {
     color: #094074; }
   .section-title.section-title-3 span {
